@@ -1,8 +1,8 @@
-#Welcome to my page!
+# Welcome to my page!
 
-** this is Rami's personal page **
+**this is Rami's personal page**
 
-this is just a testing area for me <mark>html</mark>
+this is just a testing area for me <mark>**HTML**</mark>
 
 ***
 
