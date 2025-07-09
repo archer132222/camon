@@ -1,55 +1,269 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- this line is a comment -->
         <meta charset="UTF-8">
-        <meta name="author" content="rami">
-        <meta name="description" content="this page is a test for rami">
-        <title>Rami's real website</title>
-        <link rel="icon" href="nier_icon.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="author" content="rmai faisal">
+        <meta name="description" content="this page contains all the things im learning how to create">
+        <title>MY First Web Page</title>
+        <link rel="icon" href="resources/html_icon.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-        <h1>Welcome to The Little Taco Shop</h1>
-        <ul>
-           <li>
-            <a href="#about_lts">About LTS</a>
-           </li>
-           <li><a href="#our_home">Our Menu</a></li>
-           <li><a href="#store_hours">Store Hours</a></li>
-           <li><a href="#contact_me">Contact Me</a></li>
-        </ul>
-        <img src="byakuya.jpg" alt="this is food ok?" title="food" width="250px" height="250px">
-        <p>Tacos and a Drink</p>
-        <hr>
-        <br>
-        <h2>About LTS</h2>
-        <p>LTS was founded in 2022. Our shop was built from a <strong>Love of tacos</strong> we hope our shop adds a unique and intresting place to our little town.</p>
-        <header><strong> Taco Trivia </strong></header>
+        
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello world!</h1>
+        <figure>
+            <img  src="resources/A2.jpeg" alt="A2" style="width:200px;height:200px;" title="A2 best girl">
+            <figcaption>A2 is best girl fosho</figcaption>
+        </figure>
+        
         <aside>
             <details>
                 <summary>
-                    When did tacos first appear in the United States?
+                    who is she?
                 </summary>
-                idk
+                <p>she is an android that whights probably higher than you and looks better than you. she is looking for the truth of humanity and salshes anyone that stands in her way.
+                </p>
             </details>
         </aside>
+
         <hr>
-        <h3>Our Menu</h3>
-        <table>
-            <caption>our Tacos</caption>
-            <tr>
-                <th>Tacos</th>
-                <th>Qty</th>
-                <th>price</th>
-            </tr>
-            <tr>
-                <td rowspan="2">
+
+        <nav aria-label="primay-navigation"> <!-- the aria-label is just a good thing to add if you have multible nav commands, you make a label for each-->
+            <ul>
+                <li>
+                    <a href="#learning_html">learning html</a>
+                </li>
+                <li>
+                    <a href="#my_daily_schedule">my daily schedule</a>
+                </li>
+                <li>
+                    <a href="#Aizen">Aizen sosuke</a>
+                </li>
+            </ul>
+        </nav>
+        <main> <!--the "main" is not actually neccessery but it is recommended there can be more than one main-->
+            
+            <article id="learning_html">
+                <h2>im ready to learn html</h2>
+                <ul>
+                    <li><p>im already learning <abbr title="this is a programing language used for develobing web pages">html</abbr>  <strong>lets gooo</strong></p></li>
+                    <li><p>im on <em>lesson 2</em></p></li>
+                    <li><p>this is my house location:</p>
+                    <address>st.Hira, Jeddah</address></li>
+                </ul>
+            </article>
+            <hr>
+            <!-- article or section? article is better for a clear topic, it is arguble -->
+            <article id="my_daily_schedule">
+                <h3>my daily schedule</h3>
+                <p>let me tell you how:</p>
+                <ol>
+                    <li>...i learn more about web dev.</li>
+                    <li>...i plan out my schedule.</li>
+                    <li>...i use resources from MDN</li>
+                </ol>
+                <dl> 
+                    <dt>north east</dt>
+                    <dd> this shi is <strong>HOT</strong>!</dd>
+                </dl>
+
+                <table>
+                    <caption>My daily schedule</caption>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="12:00" >12am</time>-<time datetime="15:00">3pm</time>
+                        </td>
+                        <td>learn about the religion</td>
+                    </tr>
                     
-                    sds
-                </td>
-                <th>sdfsdf</th>
-            </tr>
-        </table>
+                    <tr>
+                        <td>
+                            <time datetime="16:00" >4pm</time>-<time datetime="18:00">6pm</time>
+                        </td>
+                        <td>learn coding</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="22:00" >10pm</time>-<time datetime="00:00">12pm </time>
+                        </td>
+                        <td>play video games or watch a movie</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"> All other times</td>
+                        <td>waste of time</td>
+        
+                    </tr>
+                    <tr>
+                        <td>my brother idk</td>
+                    </tr>
+                </table>
+            </article>
+            
+            <section id="Aizen">
+                <h5><strong>Yokuso</strong></h5>
+                    
+                <img src="resources/AIZEN.JPG" style="width: 200px; height: 200px;" alt="aizen" title="Yokuso" loading="lazy">
+                <p>Watashiwa <abbr title="the genius manipulator">
+                    <a href="https://bleach.fandom.com/wiki/Sōsuke_Aizen" target="_blank">Aizen</a>
+                </abbr></p>
+                
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>personal info</legend>
+                        <p>
+                        <label for="aizen">is he cool?</label>
+                        <input type="text" name="aizen" id="aizen" placeholder="write yes or no"
+                        autocomplete="on" required>
+                        </p>
+                        <p>
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username" placeholder="John"
+                        autocomplete="on" required>
+                        </p>
+                        <p>
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" id="Password" placeholder="numbers & letters"
+                        autocomplete="on" required>
+                        </p>
+                        <p>
+                        <label for="phone">phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="966-055-5555"
+                        autocomplete="on" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
+                        </p>
+                        <p>
+                        <label for="decade">decade</label>
+                        <input type="number" name="decade" id="decade" placeholder="1958"
+                        autocomplete="on" min="200" max="2020" step="10" value="1950" >
+                        </p>
+                        <p>
+                            <label for="tea">whats your favourite tea</label>
+                            <select name="tea" id="tea"  >
+                                <option value="red tea">red tea</option>
+                                <option value="green tea">green tea</option>
+                                <option value="karak">tea with milk(karak)</option>
+                                <option value="cold tea">cold tea</option>
+                                <option value="other">other</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="tea">whats your favourite tea</label>
+                            <input type="text" name="tea" id="tea_datalist" list="tea-list">
+                            <datalist id="tea-list">
+                                <option value="red tea">red tea</option>
+                                <option value="green tea">green tea</option>
+                                <option value="karak">tea with milk(karak)</option>
+                                <option value="cold tea">cold tea</option>
+                                <option value="other">other</option>
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="favourite_anime">what's your favourite anime?</label>
+                            <select name="favourite_anime" id="favourite_anime">
+                                <optgroup label="shonen">
+                                    <option value="naruto">naruto</option>
+                                    <option value="dragonball">dragonball</option>
+                                    <option value="one piece">one piece</option>
+                                    <option value="bleach">bleach</option>
+                                    <option value="hunter x hunter">hunter x hunter</option>
+                                    <option value="fire force">fire force</option>
+                                </optgroup>
+                                    <optgroup label="romance">
+                                    <option value="kaguya-sama">kaguya-sama</option>
+                                    <option value="your lie in april">your lie in april</option>
+                                    <option value="hyouka">hyouka</option>
+                                </optgroup>
+                                <optgroup label="senin">
+                                    <option value="monster" selected>monster</option>
+                                    <option value="pluto">pluto</option>
+                                    <option value="berserk">berserk</option>
+                                    <option value="vinland saga">vinland saga</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <br>
+                        <fieldset>
+                            <legend>what is your favourite food?</legend>
+                            <p>
+                                <input type="radio" name="food" id="shawarma" value="shawarma" >
+                                <label for="shawarma">shawarma</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="food" id="pizza" value="pizza">
+                                <label for="pizza">pizza</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="food" id="baik" value="baik">
+                                <label for="baik">baik</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="food" id="rice" value="rice">
+                                <label for="rice">rice</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="food" id="other" value="other">
+                                <label for="other">other</label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>what phone do you own?</legend>
+                            <input type="checkbox" name="phone" id="iphone" value="iphone">
+                            <label for="iphone">iphone</label>
 
+                            <input type="checkbox" name="phone" id="galaxy" value="galaxy">
+                            <label for="galaxy">galaxy</label>
 
+                            <input type="checkbox" name="phone" id="huawi" value="huawi">
+                            <label for="huawi">huawi</label>
+
+                            <input type="checkbox" name="phone" id="shaumi" value="shaumi">
+                            <label for="shaumi">shaumi</label>
+
+                            <input type="checkbox" name="phone" id="other_phone" value="other_phone">
+                            <label for="other_phone">other</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Send me a note</legend>
+                            <label for="message">Your message:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="40" rows="10" placeholder="type your message here"></textarea>
+                        </fieldset>
+                        <br>
+                        <button type="submit">submit</button>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                        <button type="reset">reset</button>
+                        
+                    </fieldset>
+                </form>
+            
+            </section>
+
+        </main> 
+        
+        <!--css really helps and is very needed when using tables-->
+        
+            
+        
+        <hr>
+        <!-- br*150  repeats command 150 times-->
+        
+       
+        
+        <footer>
+            <h4>test 4</h4> <!--there should be mostly 3 headers (h1 h2 h3) but idk-->
+            <p>introducing entity &:
+                <br> 22 &lt; 44
+                <br>
+                <br> &lt;&lt;&lt; &copy; <a href="about.html">Rami Faisal</a> &gt;&gt;&gt;    
+            </p>
+        </footer>
+        
+        <p><a href="#"> back to top</a></p>
     </body>
+    <!--the body should only be written once. after the body we should have </html> it is not always the case though -->
 </html>
